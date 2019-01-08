@@ -1,2 +1,2 @@
-# education
-A single educational repository to hold demos and exercises of different technologies.
+# Education
+This repository serves to hold resources such as demos and exercises for different technologies as a way to help us all constantly learn. Every subdirectory in this repository will be a demo or exercise, and should have a `README.md` file to discuss installation and setup instructions. Each of these should also utilize the wiki to talk about the technology, how it is used in the demo, and where the reader can go to learn more about it.
