@@ -1,0 +1,6 @@
+{
+    "version": 2,
+    "name": "mdx-deck-redux-examples",
+    "alias":"h4i-redux",
+    "builds": [{ "src": "deck.mdx", "use": "@now/mdx-deck" }]
+  }

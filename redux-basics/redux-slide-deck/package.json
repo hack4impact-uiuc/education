@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "description": "Deck created with mdx-deck",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+    "pdf": "mdx-deck pdf deck.mdx",
+    "image": "mdx-deck screenshot deck.mdx",
+    "help": "mdx-deck"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "mdx-deck": "^1.6.7"
+  },
+  "dependencies": {
+    "mdx-deck": "^1.8.2",
+    "react": "^16.7.0",
+    "react-syntax-highlighter": "^10.1.2"
+  }
+}
