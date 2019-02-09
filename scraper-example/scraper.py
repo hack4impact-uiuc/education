@@ -1,13 +1,12 @@
+import json  # just for outputting Album objects
+import multiprocessing as mp  # ignore this one for now
 from bs4 import BeautifulSoup  # for traversing web data
 from selenium import webdriver  # for rendering JS
-import json  # just for outputting Album objects
-
-# ignore this one for now
-import multiprocessing as mp
+from selenium.webdriver.firefox.options import Options
 
 
 class Album:
-    # Class to model an Album
+    """Class to model an Album"""
 
     def __init__(self, title, artist, year, rating, sample_size):
         self.title = title
@@ -51,7 +50,9 @@ def get_albums_from(year):
     print("DEBUG: getting top albums from {}".format(year))
 
     # specify url to scrape from, send GET request, then render the JS
-    driver = webdriver.PhantomJS()
+    options = Options()
+    options.headless = True
+    driver = webdriver.Firefox(options=options)
     driver.get("https://www.sputnikmusic.com/best/albums/" + str(year) + "/")
     # pass the page off to bs4
     page_data = BeautifulSoup(driver.page_source, "html.parser")
@@ -95,13 +96,13 @@ def get_albums_from(year):
 
 if __name__ == "__main__":
     # span all available data
-    first_year = 1990
-    last_year = 2018
+    FIRST_YEAR = 1990
+    LAST_YEAR = 2018
 
     # you don't need to know this part rn, but it's just so we don't sit here
     # forever waiting for 28 consecutive GET requests
-    with mp.Pool(last_year - first_year) as pool:
-        data = pool.map(get_albums_from, range(first_year, last_year + 1))
+    with mp.Pool(LAST_YEAR - FIRST_YEAR) as pool:
+        data = pool.map(get_albums_from, range(FIRST_YEAR, LAST_YEAR + 1))
 
     # output the data to JSON
     with open("output.json", "w") as file:
