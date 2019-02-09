@@ -22,6 +22,7 @@ Not all data is nicely organized and easily accessible through a RESTful API, so
 * Write down the thought process used in the previous point.
 * What information might we need to choose a classification?
 * From the information presented on the page, how might you programmatically find an appropriate categorization?
+* What other information can you find about the organization that's not on their website? (News articles, social media references, etc.)
 
 ## Sites to Scrape
 * http://www.aghauganda.org/
