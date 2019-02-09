@@ -16,4 +16,18 @@ Not all data is nicely organized and easily accessible through a RESTful API, so
 * To use pipenv, go to the project directory, make sure `requirements.txt` is there, and `pipenv install -r requirements.txt`
 * Use [Black](https://black.readthedocs.io/en/stable/) (`pip install black`) — An automatic code formatter for python. Most projects using python will run black on all of your PRs, so if you don’t format correctly, the tests will fail.
 
-## Use and Development
+## GlobalGiving SP19 Intro Assignment
+
+* Look at an NGO's website. What do you think they do? Out of [Animals, Children, Climate Change, Democracy and Governance, Disaster Recovery, Economic Development, Education, Environment, Microfinance, Women and Girls, Health, Humanitarian Assistance, Human Rights, Sport, Technology, Hunger, Arts and Culture, LGBTQAI+], which category do you think fits best? Why?
+* Write down the thought process used in the previous point.
+* What information might we need to choose a classification?
+* From the information presented on the page, how might you programmatically find an appropriate categorization?
+
+## Sites to Scrape
+* http://www.aghauganda.org/
+* http://www.scan-goa.in/
+* http://www.poptani.asia/
+* https://catbeachpenang.com/
+* http://www.destinystartingpoint.com/
+* https://www.facebook.com/righttolearnkl/
+* http://www.rumahkasih.org/RKHKL/Home.html

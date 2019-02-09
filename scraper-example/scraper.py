@@ -96,13 +96,13 @@ def get_albums_from(year):
 
 if __name__ == "__main__":
     # span all available data
-    first_year = 1990
-    last_year = 2018
+    FIRST_YEAR = 1990
+    LAST_YEAR = 2018
 
     # you don't need to know this part rn, but it's just so we don't sit here
     # forever waiting for 28 consecutive GET requests
-    with mp.Pool(last_year - first_year) as pool:
-        data = pool.map(get_albums_from, range(first_year, last_year + 1))
+    with mp.Pool(LAST_YEAR - FIRST_YEAR) as pool:
+        data = pool.map(get_albums_from, range(FIRST_YEAR, LAST_YEAR + 1))
 
     # output the data to JSON
     with open("output.json", "w") as file:
