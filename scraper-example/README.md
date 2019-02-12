@@ -18,11 +18,22 @@ Not all data is nicely organized and easily accessible through a RESTful API, so
 
 ## GlobalGiving SP19 Intro Assignment
 
+### Part One
+
 * Look at an NGO's website. What do you think they do? Out of [Animals, Children, Climate Change, Democracy and Governance, Disaster Recovery, Economic Development, Education, Environment, Microfinance, Women and Girls, Health, Humanitarian Assistance, Human Rights, Sport, Technology, Hunger, Arts and Culture, LGBTQAI+], which category do you think fits best? Why?
 * Write down the thought process used in the previous point.
 * What information might we need to choose a classification?
 * From the information presented on the page, how might you programmatically find an appropriate categorization?
 * What other information can you find about the organization that's not on their website? (News articles, social media references, etc.)
+
+### Part Two
+
+Now that we've seen how several different NGO websites might be structured, let's try to extract categorization-related information programmatically. For the sites you analyzed in part one, choose one or two heuristics (depending on the complexity) to work with. Work with the heuristics we discussed during the dev night, or choose one you think we might have missed. Write scripts to assess these heuristics.
+
+* Do the results of these scripts match what you expected? How do they differ?
+* Do the heuristics significantly inform any aspect of categorization?
+* Bluntly, do these things actually mean anything?
+* _Remember, these are all open questions that we're trying to explore to eventually lead to a solution design, so all answers are welcome._
 
 ## Sites to Scrape
 * http://www.aghauganda.org/
